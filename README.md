@@ -1,4 +1,4 @@
-# ACE-ToolingTemplate
+# ACE-Azure-Diaganostics
 
 Diagnostic module for Azure. Enables required log settings for supported resources to a Log Analytics Workspace.
 
