@@ -1,30 +1,12 @@
-# ACE-ToolingTemplate
-
-Diagnostic module for Azure. Enables required log settings for supported resources to a Log Analytics Workspace.
+# Coalfire Diagnostic
 
 ## Description
 
-- Terraform Version: 1.1.7
-- AzureRM Version: 3.4.0
-- Cloud(s) supported:{Government/Commercial} Both
-- Cloud(s) verified: Government
-- Product Version/License:
-- FedRAMP Compliance Support: Moderate, High
-- DoD Compliance Support:{IL4/5} IL4, IL5
-- Misc Framework Support:
-- Launchpad validated version: N/A
+Base module that enables 'log' and 'metric' events based on the resource provided.
 
-## Setup and usage
+Directs those events to the log analytics workspace.
 
-You can consume this as part of any Azure project. There are no known outside dependencies. View the module README for detailed instructions.
-
-### Code Location
-
-Code should be stored in terraform/modules
-
-### Code updates
-
-If you need to support resources in addition to this list, you will need to creation additional config files.
+## Resource List
 
 These are the resources that this module supports:
 
@@ -48,42 +30,28 @@ These are the resources that this module supports:
 - Subscriptions
 - Vnet
 
-## Issues
+**Note:** New resources (Azure products) will need to be added as needed.
 
-Bug fixes and enhancements are managed, tracked, and discussed through the GitHub issues on this repository.
+## Inputs
 
-Issues should be flagged appropriately.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:-----:|
+| resource_type | The resource type i.e Azure product name (follow CF naming convention) | string | N/A | yes |
+| resource_id | Target resource ID | string | N/A | yes |
+| diag_log_analytics_id | ID of the Log Analytics Workspace diagnostic logs should be sent to | string | N/A | yes |
 
-- Bug
-- Enhancement
-- Documentation
-- Code
+## Outputs
 
-### Bugs
+| Name | Description |
+|------|-------------|
 
-Bugs are problems that exist with the technology or code that occur when expected behavior does not match implementation.
-For example, spelling mistakes on a dashboard.
+## Usage
 
-Use the Bug fix template to describe the issue and expected behaviors.
-
-### Enhancements
-
-Updates and changes to the code to support additional functionality, new features or improve engineering or operations usage of the technology.
-For example, adding a new widget to a dashboard to report on failed backups is enhancement.
-
-Use the Enhancement issue template to request enhancements to the codebase. Enhancements should be improvements that are applicable to wide variety of clients and projects. One of updates for a specific project should be handled locally. If you are unsure if something qualifies for an enhancement contact the repository code owner.
-
-### Pull Requests
-
-Code updates ideally are limited in scope to address one enhancement or bug fix per PR. The associated PR should be linked to the relevant issue.
-
-### Code Owners
-
-- Primary Code owner: Douglas Francis (@douglas-f)
-- Backup Code owner:
-
-The responsibility of the code owners is to approve and Merge PR's on the repository, and generally manage and direct issue discussions.
-
-### GitHub Actions
-
-Future state. There are current initiatives for running CI/CD tooling as GitHub actions.
+```hcl
+module "diag" {
+  source                = "../../../modules/coalfire-diagnostic/"
+  diag_log_analytics_id = var.diag_la_id
+  resource_id           = "/subscriptions/c14355b2-e625-4197-9538-b3e72fe41801/resourceGroups/v1-prod-va-mp-management-rg/providers/Microsoft.DBforPostgreSQL/servers/v1-prod-va-mp-jira-psql"
+  resource_type         = "psql"
+}
+```
