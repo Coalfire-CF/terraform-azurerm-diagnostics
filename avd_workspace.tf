@@ -6,7 +6,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
 
   enabled_log {
     category = "Checkpoint"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -15,7 +15,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
   }
   enabled_log {
     category = "Error"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -24,7 +24,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
   }
   enabled_log {
     category = "Management"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -33,7 +33,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
   }
   enabled_log {
     category = "Feed"
-    enabled  = true
+
 
     retention_policy {
       days    = 365

@@ -12,7 +12,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
   enabled_log {
     category = "AddonAzureBackupAlerts"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -21,7 +21,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AddonAzureBackupJobs"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -30,7 +30,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AddonAzureBackupPolicy"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -39,7 +39,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AddonAzureBackupProtectedInstance"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -48,7 +48,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AddonAzureBackupStorage"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -57,7 +57,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AzureBackupReport"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -66,7 +66,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryEvents"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -75,7 +75,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryJobs"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -84,7 +84,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryProtectedDiskDataChurn"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -93,7 +93,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryRecoveryPoints"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -102,7 +102,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryReplicatedItems"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -111,7 +111,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryReplicationDataUploadRate"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -120,7 +120,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryReplicationStats"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -129,7 +129,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   }
   enabled_log {
     category = "CoreAzureBackup"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -146,7 +146,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
   enabled_log {
     category = "AddonAzureBackupAlerts"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -155,7 +155,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AddonAzureBackupJobs"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -164,7 +164,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AddonAzureBackupPolicy"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -173,7 +173,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AddonAzureBackupProtectedInstance"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -182,7 +182,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AddonAzureBackupStorage"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365
@@ -191,7 +191,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AzureBackupReport"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -200,7 +200,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryEvents"
-    enabled  = true
+
     retention_policy {
       days    = 365
       enabled = true
@@ -208,7 +208,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryJobs"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -217,7 +217,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryProtectedDiskDataChurn"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -226,7 +226,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryRecoveryPoints"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -235,7 +235,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryReplicatedItems"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -244,7 +244,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryReplicationDataUploadRate"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -253,16 +253,17 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   }
   enabled_log {
     category = "AzureSiteRecoveryReplicationStats"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
       enabled = true
+
     }
   }
   enabled_log {
     category = "CoreAzureBackup"
-    enabled  = false #Due to issue above
+
 
     retention_policy {
       days    = 365

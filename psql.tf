@@ -6,7 +6,7 @@ resource "azurerm_monitor_diagnostic_setting" "psql_diag" {
 
   enabled_log {
     category = "PostgreSQLLogs"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -15,7 +15,7 @@ resource "azurerm_monitor_diagnostic_setting" "psql_diag" {
   }
   enabled_log {
     category = "QueryStoreRuntimeStatistics"
-    enabled  = false # Not needed for compliance
+
 
     retention_policy {
       days    = 365
@@ -24,7 +24,7 @@ resource "azurerm_monitor_diagnostic_setting" "psql_diag" {
   }
   enabled_log {
     category = "QueryStoreWaitStatistics"
-    enabled  = false # Not needed for compliance
+
 
     retention_policy {
       days    = 365

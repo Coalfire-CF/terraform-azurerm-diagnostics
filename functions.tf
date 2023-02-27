@@ -6,7 +6,7 @@ resource "azurerm_monitor_diagnostic_setting" "func_diag" {
 
   enabled_log {
     category = "FunctionAppLogs"
-    enabled  = true
+
 
     retention_policy {
       days    = 365

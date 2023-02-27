@@ -6,7 +6,7 @@ resource "azurerm_monitor_diagnostic_setting" "nsg_diag" {
 
   enabled_log {
     category = "NetworkSecurityGroupEvent"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -15,7 +15,7 @@ resource "azurerm_monitor_diagnostic_setting" "nsg_diag" {
   }
   enabled_log {
     category = "NetworkSecurityGroupRuleCounter"
-    enabled  = true
+
 
     retention_policy {
       days    = 365

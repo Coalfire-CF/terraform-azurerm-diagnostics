@@ -6,7 +6,6 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
 
   enabled_log {
     category = "cloud-controller-manager"
-    enabled  = true
 
     retention_policy {
       days    = 365
@@ -15,7 +14,6 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
   }
   enabled_log {
     category = "cluster-autoscaler"
-    enabled  = false # Not needed for compliance
 
     retention_policy {
       days    = 365
@@ -24,7 +22,6 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
   }
   enabled_log {
     category = "csi-azuredisk-controller"
-    enabled  = false # Not needed for compliance
 
     retention_policy {
       days    = 365
@@ -33,7 +30,6 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
   }
   enabled_log {
     category = "csi-azurefile-controller"
-    enabled  = false # Not needed for compliance
 
     retention_policy {
       days    = 365
@@ -42,7 +38,6 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
   }
   enabled_log {
     category = "csi-snapshot-controller"
-    enabled  = false # Not needed for compliance
 
     retention_policy {
       days    = 365
@@ -51,7 +46,6 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
   }
   enabled_log {
     category = "guard"
-    enabled  = true
 
     retention_policy {
       days    = 365
@@ -60,7 +54,6 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
   }
   enabled_log {
     category = "kube-apiserver"
-    enabled  = true
 
     retention_policy {
       days    = 365
@@ -69,16 +62,14 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
   }
   enabled_log {
     category = "kube-audit"
-    enabled  = true
 
     retention_policy {
-      days    = 365
       enabled = true
+      days    = 365
     }
   }
   enabled_log {
     category = "kube-audit-admin"
-    enabled  = true
 
     retention_policy {
       days    = 365
@@ -87,7 +78,6 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
   }
   enabled_log {
     category = "kube-controller-manager"
-    enabled  = true
 
     retention_policy {
       days    = 365
@@ -96,7 +86,6 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
   }
   enabled_log {
     category = "kube-scheduler"
-    enabled  = false # Not needed for compliance
 
     retention_policy {
       days    = 365
@@ -106,7 +95,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
 
   metric {
     category = "AllMetrics"
-    enabled  = true
+    enabled  = false
 
     retention_policy {
       days    = 365

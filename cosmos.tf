@@ -7,7 +7,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
 
   enabled_log {
     category = "CassandraRequests"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -16,7 +16,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
   }
   enabled_log {
     category = "ControlPlaneRequests"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -25,7 +25,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
   }
   enabled_log {
     category = "DataPlaneRequests"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -34,7 +34,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
   }
   enabled_log {
     category = "GremlinRequests"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -43,7 +43,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
   }
   enabled_log {
     category = "MongoRequests"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -52,7 +52,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
   }
   enabled_log {
     category = "PartitionKeyRUConsumption"
-    enabled  = false # Not needed for compliance
+
 
     retention_policy {
       days    = 365
@@ -61,7 +61,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
   }
   enabled_log {
     category = "PartitionKeyStatistics"
-    enabled  = false # Not needed for compliance
+
 
     retention_policy {
       days    = 365
@@ -70,7 +70,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
   }
   enabled_log {
     category = "QueryRuntimeStatistics"
-    enabled  = false # Not needed for compliance
+
 
     retention_policy {
       days    = 365
@@ -79,7 +79,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
   }
   enabled_log {
     category = "TableApiRequests"
-    enabled  = false # Not needed for compliance
+
 
     retention_policy {
       days    = 365
@@ -89,7 +89,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
 
   metric {
     category = "Requests"
-    enabled  = true
+
 
     retention_policy {
       days    = 365

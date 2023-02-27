@@ -6,7 +6,6 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
 
   enabled_log {
     category = "ApplicationGatewayAccessLog"
-    enabled  = true
 
     retention_policy {
       days    = 365
@@ -15,7 +14,6 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
   }
   enabled_log {
     category = "ApplicationGatewayFirewallLog"
-    enabled  = true
 
     retention_policy {
       days    = 365
@@ -24,7 +22,6 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
   }
   enabled_log {
     category = "ApplicationGatewayPerformanceLog"
-    enabled  = false # Not needed for compliance
 
     retention_policy {
       days    = 365
@@ -34,11 +31,11 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
 
   metric {
     category = "AllMetrics"
-    enabled  = true
+    enabled  = false
 
     retention_policy {
       days    = 365
-      enabled = true
+      enabled = false
     }
   }
 }

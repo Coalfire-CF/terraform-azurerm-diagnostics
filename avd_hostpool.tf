@@ -6,7 +6,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
 
   enabled_log {
     category = "Checkpoint"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -15,7 +15,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
   }
   enabled_log {
     category = "Error"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -24,16 +24,17 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
   }
   enabled_log {
     category = "Management"
-    enabled  = true
+
 
     retention_policy {
-      days    = 365
       enabled = true
+      days    = 365
+
     }
   }
   enabled_log {
     category = "Connection"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -42,7 +43,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
   }
   enabled_log {
     category = "HostRegistration"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -51,7 +52,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
   }
   enabled_log {
     category = "AgentHealthStatus"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -60,7 +61,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
   }
   enabled_log {
     category = "SessionHostManagement"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -69,7 +70,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
   }
   enabled_log {
     category = "NetworkData"
-    enabled  = true
+
 
     retention_policy {
       days    = 365

@@ -6,7 +6,7 @@ resource "azurerm_monitor_diagnostic_setting" "msql_diag" {
 
   enabled_log {
     category = "MySqlAuditLogs"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -15,7 +15,7 @@ resource "azurerm_monitor_diagnostic_setting" "msql_diag" {
   }
   enabled_log {
     category = "MySqlSlowLogs"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -25,7 +25,7 @@ resource "azurerm_monitor_diagnostic_setting" "msql_diag" {
 
   metric {
     category = "AllMetrics"
-    enabled  = true
+
 
     retention_policy {
       days    = 365

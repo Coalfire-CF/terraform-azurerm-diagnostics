@@ -6,7 +6,7 @@ resource "azurerm_monitor_diagnostic_setting" "kv_diag" {
 
   enabled_log {
     category = "AuditEvent"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -16,7 +16,7 @@ resource "azurerm_monitor_diagnostic_setting" "kv_diag" {
 
   enabled_log {
     category = "AzurePolicyEvaluationDetails"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -26,7 +26,7 @@ resource "azurerm_monitor_diagnostic_setting" "kv_diag" {
 
   metric {
     category = "AllMetrics"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
