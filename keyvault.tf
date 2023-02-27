@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "kv_diag" {
   name                       = "keyvault_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "AuditEvent"
     enabled  = true
 
@@ -14,7 +14,7 @@ resource "azurerm_monitor_diagnostic_setting" "kv_diag" {
     }
   }
 
-  log {
+  enabled_log {
     category = "AzurePolicyEvaluationDetails"
     enabled  = true
 

@@ -10,7 +10,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   target_resource_id             = var.resource_id
   log_analytics_destination_type = "Dedicated"
 
-  log {
+  enabled_log {
     category = "AddonAzureBackupAlerts"
     enabled  = true
 
@@ -19,7 +19,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AddonAzureBackupJobs"
     enabled  = true
 
@@ -28,7 +28,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AddonAzureBackupPolicy"
     enabled  = true
 
@@ -37,7 +37,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AddonAzureBackupProtectedInstance"
     enabled  = true
 
@@ -46,7 +46,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AddonAzureBackupStorage"
     enabled  = true
 
@@ -55,7 +55,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AzureBackupReport"
     enabled  = false #Due to issue above
 
@@ -64,7 +64,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryEvents"
     enabled  = false #Due to issue above
 
@@ -73,7 +73,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryJobs"
     enabled  = false #Due to issue above
 
@@ -82,7 +82,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryProtectedDiskDataChurn"
     enabled  = false #Due to issue above
 
@@ -91,7 +91,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryRecoveryPoints"
     enabled  = false #Due to issue above
 
@@ -100,7 +100,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryReplicatedItems"
     enabled  = false #Due to issue above
 
@@ -109,7 +109,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryReplicationDataUploadRate"
     enabled  = false #Due to issue above
 
@@ -118,7 +118,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryReplicationStats"
     enabled  = false #Due to issue above
 
@@ -127,7 +127,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "CoreAzureBackup"
     enabled  = true
 
@@ -144,7 +144,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   name                       = "site_recovery_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "AddonAzureBackupAlerts"
     enabled  = false #Due to issue above
 
@@ -153,7 +153,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AddonAzureBackupJobs"
     enabled  = false #Due to issue above
 
@@ -162,7 +162,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AddonAzureBackupPolicy"
     enabled  = false #Due to issue above
 
@@ -171,7 +171,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AddonAzureBackupProtectedInstance"
     enabled  = false #Due to issue above
 
@@ -180,7 +180,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AddonAzureBackupStorage"
     enabled  = false #Due to issue above
 
@@ -189,7 +189,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "AzureBackupReport"
     enabled  = true
 
@@ -198,7 +198,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryEvents"
     enabled  = true
     retention_policy {
@@ -206,7 +206,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryJobs"
     enabled  = true
 
@@ -215,7 +215,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryProtectedDiskDataChurn"
     enabled  = true
 
@@ -224,7 +224,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryRecoveryPoints"
     enabled  = true
 
@@ -233,7 +233,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryReplicatedItems"
     enabled  = true
 
@@ -242,7 +242,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryReplicationDataUploadRate"
     enabled  = true
 
@@ -251,7 +251,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "AzureSiteRecoveryReplicationStats"
     enabled  = true
 
@@ -260,7 +260,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "CoreAzureBackup"
     enabled  = false #Due to issue above
 

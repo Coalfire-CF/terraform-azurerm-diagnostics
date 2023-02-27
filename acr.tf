@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "acr_diag" {
   name                       = "acr_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_enabled_log {
     category = "ContainerRegistryLoginEvents"
     enabled  = true
 
@@ -14,7 +14,7 @@ resource "azurerm_monitor_diagnostic_setting" "acr_diag" {
     }
   }
   # Not needed for compliance
-  log {
+  enabled_log {
     category = "ContainerRegistryRepositoryEvents"
     enabled  = false # Not needed for compliance
 

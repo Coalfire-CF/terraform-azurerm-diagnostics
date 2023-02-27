@@ -6,35 +6,35 @@ resource "azurerm_monitor_diagnostic_setting" "sub_diag" {
 
   # Can't have retention block for subscription diag settings. 
   # If you add the retention block, Azure will remove it in the background creating an update with every terraform plan/apply
-  log {
+  enabled_log {
     category = "Administrative"
     enabled  = true
   }
-  log {
+  enabled_log {
     category = "Alert"
     enabled  = true
   }
-  log {
+  enabled_log {
     category = "Autoscale"
     enabled  = false # Not needed for compliance
   }
-  log {
+  enabled_log {
     category = "Policy"
     enabled  = true
   }
-  log {
+  enabled_log {
     category = "Recommendation"
     enabled  = false # Not needed for compliance
   }
-  log {
+  enabled_log {
     category = "ResourceHealth"
     enabled  = false # Not needed for compliance
   }
-  log {
+  enabled_log {
     category = "Security"
     enabled  = true
   }
-  log {
+  enabled_log {
     category = "ServiceHealth"
     enabled  = false # Not needed for compliance
   }

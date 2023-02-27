@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
   name                       = "sql_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "AutomaticTuning"
     enabled  = false # Not needed for compliance
 
@@ -13,7 +13,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "Blocks"
     enabled  = false # Not needed for compliance
 
@@ -22,7 +22,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "DatabaseWaitStatistics"
     enabled  = false # Not needed for compliance
 
@@ -31,7 +31,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "Deadlocks"
     enabled  = false # Not needed for compliance
 
@@ -40,7 +40,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "DevOpsOperationsAudit"
     enabled  = true
 
@@ -49,7 +49,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "Errors"
     enabled  = true
 
@@ -58,7 +58,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "QueryStoreRuntimeStatistics"
     enabled  = false # Not needed for compliance
 
@@ -67,7 +67,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "QueryStoreWaitStatistics"
     enabled  = false # Not needed for compliance
 
@@ -76,7 +76,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "SQLInsights"
     enabled  = true
 
@@ -85,7 +85,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "SQLSecurityAuditEvents"
     enabled  = true
 
@@ -94,7 +94,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "Timeouts"
     enabled  = false # Not needed for compliance
 

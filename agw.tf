@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
   name                       = "agw_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "ApplicationGatewayAccessLog"
     enabled  = true
 
@@ -13,7 +13,7 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "ApplicationGatewayFirewallLog"
     enabled  = true
 
@@ -22,7 +22,7 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "ApplicationGatewayPerformanceLog"
     enabled  = false # Not needed for compliance
 

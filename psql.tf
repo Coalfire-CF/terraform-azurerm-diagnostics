@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "psql_diag" {
   name                       = "psql_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "PostgreSQLLogs"
     enabled  = true
 
@@ -13,7 +13,7 @@ resource "azurerm_monitor_diagnostic_setting" "psql_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "QueryStoreRuntimeStatistics"
     enabled  = false # Not needed for compliance
 
@@ -22,7 +22,7 @@ resource "azurerm_monitor_diagnostic_setting" "psql_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "QueryStoreWaitStatistics"
     enabled  = false # Not needed for compliance
 

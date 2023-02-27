@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
   name                       = "automationaccount_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "AuditEvent"
     enabled  = true
 
@@ -13,7 +13,7 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "DscNodeStatus"
     enabled  = false # Not needed for compliance
 
@@ -22,7 +22,7 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "JobLogs"
     enabled  = false # Not needed for compliance
 
@@ -31,7 +31,7 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "JobStreams"
     enabled  = false # Not needed for compliance
 

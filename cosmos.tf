@@ -5,7 +5,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
   name                           = "cosmos_securityLogs"
   target_resource_id             = var.resource_id
 
-  log {
+  enabled_log {
     category = "CassandraRequests"
     enabled  = true
 
@@ -14,7 +14,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "ControlPlaneRequests"
     enabled  = true
 
@@ -23,7 +23,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "DataPlaneRequests"
     enabled  = true
 
@@ -32,7 +32,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "GremlinRequests"
     enabled  = true
 
@@ -41,7 +41,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "MongoRequests"
     enabled  = true
 
@@ -50,7 +50,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "PartitionKeyRUConsumption"
     enabled  = false # Not needed for compliance
 
@@ -59,7 +59,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "PartitionKeyStatistics"
     enabled  = false # Not needed for compliance
 
@@ -68,7 +68,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "QueryRuntimeStatistics"
     enabled  = false # Not needed for compliance
 
@@ -77,7 +77,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "TableApiRequests"
     enabled  = false # Not needed for compliance
 

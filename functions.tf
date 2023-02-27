@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "func_diag" {
   name                       = "functions_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "FunctionAppLogs"
     enabled  = true
 

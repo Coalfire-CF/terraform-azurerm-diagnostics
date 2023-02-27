@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
   name                       = "avd_ws_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "Checkpoint"
     enabled  = true
 
@@ -13,7 +13,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "Error"
     enabled  = true
 
@@ -22,7 +22,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "Management"
     enabled  = true
 
@@ -31,7 +31,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "Feed"
     enabled  = true
 

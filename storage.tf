@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
   name                       = "storage_securityLogs"
   target_resource_id         = "${var.resource_id}/blobServices/default"
 
-  log {
+  enabled_log {
     category = "StorageDelete"
     enabled  = true
 
@@ -13,7 +13,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "StorageRead"
     enabled  = true
 
@@ -22,7 +22,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "StorageWrite"
     enabled  = true
 

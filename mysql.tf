@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "msql_diag" {
   name                       = "mysql_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "MySqlAuditLogs"
     enabled  = true
 
@@ -13,7 +13,7 @@ resource "azurerm_monitor_diagnostic_setting" "msql_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "MySqlSlowLogs"
     enabled  = true
 

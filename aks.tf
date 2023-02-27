@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
   name                       = "aks_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "cloud-controller-manager"
     enabled  = true
 
@@ -13,7 +13,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "cluster-autoscaler"
     enabled  = false # Not needed for compliance
 
@@ -22,7 +22,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "csi-azuredisk-controller"
     enabled  = false # Not needed for compliance
 
@@ -31,7 +31,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "csi-azurefile-controller"
     enabled  = false # Not needed for compliance
 
@@ -40,7 +40,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "csi-snapshot-controller"
     enabled  = false # Not needed for compliance
 
@@ -49,7 +49,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "guard"
     enabled  = true
 
@@ -58,7 +58,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "kube-apiserver"
     enabled  = true
 
@@ -67,7 +67,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "kube-audit"
     enabled  = true
 
@@ -76,7 +76,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "kube-audit-admin"
     enabled  = true
 
@@ -85,7 +85,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "kube-controller-manager"
     enabled  = true
 
@@ -94,7 +94,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "kube-scheduler"
     enabled  = false # Not needed for compliance
 
