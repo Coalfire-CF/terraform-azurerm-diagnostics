@@ -4,27 +4,27 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
   name                       = "storage_securityLogs"
   target_resource_id         = "${var.resource_id}/blobServices/default"
 
-  log {
+  enabled_log {
     category = "StorageDelete"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "StorageRead"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "StorageWrite"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -34,16 +34,16 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
 
   metric {
     category = "Capacity"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
-      enabled = true
+      enabled = false
     }
   }
   metric {
     category = "Transaction"
-    enabled  = true
+    enabled  = false
 
     retention_policy {
       days    = 365

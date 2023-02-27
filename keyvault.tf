@@ -4,9 +4,9 @@ resource "azurerm_monitor_diagnostic_setting" "kv_diag" {
   name                       = "keyvault_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "AuditEvent"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -14,9 +14,9 @@ resource "azurerm_monitor_diagnostic_setting" "kv_diag" {
     }
   }
 
-  log {
+  enabled_log {
     category = "AzurePolicyEvaluationDetails"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -26,7 +26,7 @@ resource "azurerm_monitor_diagnostic_setting" "kv_diag" {
 
   metric {
     category = "AllMetrics"
-    enabled  = true
+
 
     retention_policy {
       days    = 365

@@ -4,36 +4,35 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
   name                       = "automationaccount_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "AuditEvent"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "DscNodeStatus"
-    enabled  = false # Not needed for compliance
 
     retention_policy {
       days    = 365
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "JobLogs"
-    enabled  = false # Not needed for compliance
+
 
     retention_policy {
       days    = 365
       enabled = false
     }
   }
-  log {
+  enabled_log {
     category = "JobStreams"
-    enabled  = false # Not needed for compliance
+
 
     retention_policy {
       days    = 365
@@ -43,11 +42,11 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
 
   metric {
     category = "AllMetrics"
-    enabled  = true
+    enabled  = false
 
     retention_policy {
       days    = 365
-      enabled = true
+      enabled = false
     }
   }
 }

@@ -4,36 +4,36 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
   name                       = "avd_ws_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "Checkpoint"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "Error"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "Management"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "Feed"
-    enabled  = true
+
 
     retention_policy {
       days    = 365

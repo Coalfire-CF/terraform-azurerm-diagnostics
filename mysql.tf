@@ -4,18 +4,18 @@ resource "azurerm_monitor_diagnostic_setting" "msql_diag" {
   name                       = "mysql_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "MySqlAuditLogs"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
       enabled = true
     }
   }
-  log {
+  enabled_log {
     category = "MySqlSlowLogs"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -25,7 +25,7 @@ resource "azurerm_monitor_diagnostic_setting" "msql_diag" {
 
   metric {
     category = "AllMetrics"
-    enabled  = true
+
 
     retention_policy {
       days    = 365

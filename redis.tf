@@ -4,9 +4,9 @@ resource "azurerm_monitor_diagnostic_setting" "rdc_diag" {
   name                       = "redis_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "ConnectedClientList"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -16,7 +16,7 @@ resource "azurerm_monitor_diagnostic_setting" "rdc_diag" {
 
   metric {
     category = "AllMetrics"
-    enabled  = true
+
 
     retention_policy {
       days    = 365

@@ -4,9 +4,9 @@ resource "azurerm_monitor_diagnostic_setting" "fw_diag" {
   name                       = "fw_securityLogs"
   target_resource_id         = var.resource_id
 
-  log {
+  enabled_log {
     category = "AzureFirewallApplicationRule"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -14,9 +14,9 @@ resource "azurerm_monitor_diagnostic_setting" "fw_diag" {
     }
   }
 
-  log {
+  enabled_log {
     category = "AzureFirewallNetworkRule"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -24,9 +24,9 @@ resource "azurerm_monitor_diagnostic_setting" "fw_diag" {
     }
   }
 
-  log {
+  enabled_log {
     category = "AzureFirewallDnsProxy"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
@@ -36,7 +36,7 @@ resource "azurerm_monitor_diagnostic_setting" "fw_diag" {
 
   metric {
     category = "AllMetrics"
-    enabled  = true
+
 
     retention_policy {
       days    = 365
