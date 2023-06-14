@@ -1,6 +1,6 @@
 # Blob storage logging
 
-resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
+resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
   count                      = var.resource_type == "sa" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
   name                       = "storage_securityLogs"
@@ -110,7 +110,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
 }
 
 # Queue Logging
-resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
+resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
   count                      = var.resource_type == "sa" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
   name                       = "storage_securityLogs"
@@ -166,7 +166,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
 
 # Table Logging
 
-resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
+resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
   count                      = var.resource_type == "sa" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
   name                       = "storage_securityLogs"
