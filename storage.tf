@@ -63,7 +63,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
 
   metric {
     category = "Transaction"
-    enabled  = false
+    enabled  = true
 
     retention_policy {
       days    = 365
