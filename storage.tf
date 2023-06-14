@@ -185,7 +185,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
 
 # File Logging
 
-resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
+resource "azurerm_monitor_diagnostic_setting" "file_table_diag" {
   count                      = var.resource_type == "sa" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
   name                       = "storage_securityLogs"
