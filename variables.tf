@@ -7,7 +7,7 @@ variable "resource_type" {
       "acr",      # azure container registry
       "agw",      # application gateway
       "aks",      # azure kubernetes service
-      "aa",       # automationaccount
+      "aa",       # automation account
       "avd_pool", # azure virtual desktop hostpool
       "avd_ws",   # azure virtual desktop workspace
       "rsv",      # recovery services vault
@@ -16,6 +16,7 @@ variable "resource_type" {
       "func",     # function app
       "fw",       # firewall
       "kv",       # key vault
+      "law",      # log analytics workspace
       "lb",       # load balancer
       "msql",     # mySql db
       "nsg",      # network security group
