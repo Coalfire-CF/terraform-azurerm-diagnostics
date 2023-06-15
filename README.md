@@ -38,6 +38,7 @@ These are the resources that this module supports:
 - Functions
 - Firewall
 - Key Vault
+- Log Analytics Workspace
 - Load Balancer
 - MySQL Managed Instance
 - NSG
