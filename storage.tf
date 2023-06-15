@@ -70,6 +70,16 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
       enabled = true
     }
   }
+
+  metric {
+    category = "Capacity"
+
+
+    retention_policy {
+      days    = 365
+      enabled = false
+    }
+  }
 }
 
 # Queue Logging
