@@ -7,7 +7,7 @@ variable "resource_type" {
       "acr",      # azure container registry
       "agw",      # application gateway
       "aks",      # azure kubernetes service
-      "aa",       # automationaccount
+      "aa",       # automation account
       "asp",      # app service
       "ase",      # app service environment
       "avd_pool", # azure virtual desktop hostpool
@@ -21,6 +21,7 @@ variable "resource_type" {
       "fw",       # firewall
       "kv",       # key vault
       "kusto",    # kusto
+      "law",      # log analytics workspace
       "lb",       # load balancer
       "lga",      # logic app
       "msql",     # mySql db
