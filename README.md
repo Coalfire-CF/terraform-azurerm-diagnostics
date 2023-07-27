@@ -5,7 +5,7 @@ Diagnostic module for Azure. Enables required log settings for supported resourc
 ## Description
 
 - Terraform Version: 1.1.7
-- AzureRM Version: 3.4.0
+- AzureRM Version: 3.45.0
 - Cloud(s) supported:{Government/Commercial} Both
 - Cloud(s) verified: Government
 - Product Version/License:
@@ -25,29 +25,6 @@ Code should be stored in terraform/modules
 ### Code updates
 
 If you need to support resources in addition to this list, you will need to creation additional config files.
-
-These are the resources that this module supports:
-
-- ACR
-- Application Gateway
-- AKS
-- Automation Accounts
-- Azure Virtual Desktop
-- Cosmos Database
-- Event Hub
-- Functions
-- Firewall
-- Key Vault
-- Log Analytics Workspace
-- Load Balancer
-- MySQL Managed Instance
-- NSG
-- PostgreSQL Managed Instance
-- Redis
-- SQL
-- Storage Accounts
-- Subscriptions
-- Vnet
 
 ## Issues
 
@@ -88,6 +65,17 @@ The responsibility of the code owners is to approve and Merge PR's on the reposi
 ### GitHub Actions
 
 Future state. There are current initiatives for running CI/CD tooling as GitHub actions.
+
+### Usage
+
+```hcl
+module "diag" {
+  source                = "github.com/Coalfire-CF/Ace-Azure-Diagnostics"
+  diag_log_analytics_id = var.diag_log_analytics_id
+  resource_id           = azurerm_databricks_workspace.default.id
+  resource_type         = "dbk"
+}
+```
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements

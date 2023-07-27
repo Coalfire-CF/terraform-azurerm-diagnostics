@@ -7,25 +7,35 @@ variable "resource_type" {
       "acr",      # azure container registry
       "agw",      # application gateway
       "aks",      # azure kubernetes service
-      "aa",       # automation account
+      "aa",       # automationaccount
+      "asp",      # app service
+      "ase",      # app service environment
       "avd_pool", # azure virtual desktop hostpool
       "avd_ws",   # azure virtual desktop workspace
+      "df",       # data factory
+      "dbk",      # Databricks
       "rsv",      # recovery services vault
       "cdb",      # cosmos db
       "eh",       # event hub
       "func",     # function app
       "fw",       # firewall
       "kv",       # key vault
-      "law",      # log analytics workspace
+      "kusto",    # kusto
       "lb",       # load balancer
+      "lga",      # logic app
       "msql",     # mySql db
+      "mssql",    # mssql server
+      "mssql_ep", # SQL Elastic Pool
+      "mssqldb",  # mssql db
       "nsg",      # network security group
-      "psql",     # postgreSql db
+      "psql",     # postgreSql flexible db
       "rdc",      # azure redis cache
-      "sql",      # mssql db
+      "rdec",     # redis eterprise cluster
+      "sql",      # sql db
       "sa",       # storage account
       "sub",      # subscription
-      "vnet"      # virtual network
+      "vnet",     # virtual network
+      "webapp"    # Web App
       ],
       var.resource_type
     )
