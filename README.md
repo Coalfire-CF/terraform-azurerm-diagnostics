@@ -69,11 +69,11 @@ Future state. There are current initiatives for running CI/CD tooling as GitHub 
 ### Usage
 
 ```hcl
-module "diag" {
+module "kv_diag" {
   source                = "github.com/Coalfire-CF/Ace-Azure-Diagnostics"
   diag_log_analytics_id = var.diag_log_analytics_id
-  resource_id           = azurerm_databricks_workspace.default.id
-  resource_type         = "dbk"
+  resource_id           = azurerm_key_vault.default.id
+  resource_type         = "kv"
 }
 ```
 
