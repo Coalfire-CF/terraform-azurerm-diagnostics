@@ -12,10 +12,10 @@ variable "resource_type" {
       "ase",      # app service environment
       "avd_pool", # azure virtual desktop hostpool
       "avd_ws",   # azure virtual desktop workspace
-      "df",       # data factory
-      "dbk",      # Databricks
-      "rsv",      # recovery services vault
       "cdb",      # cosmos db
+      "df",       # data factory
+      "dbk",      # databricks
+      "rsv",      # recovery services vault
       "eh",       # event hub
       "func",     # function app
       "fw",       # firewall
@@ -31,7 +31,7 @@ variable "resource_type" {
       "nsg",      # network security group
       "psql",     # postgreSql flexible db
       "rdc",      # azure redis cache
-      "rdec",     # redis eterprise cluster
+      "rdec",     # redis enterprise cluster
       "sql",      # sql db
       "sa",       # storage account
       "sub",      # subscription

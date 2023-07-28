@@ -4,15 +4,12 @@ Diagnostic module for Azure. Enables required log settings for supported resourc
 
 ## Description
 
-- Terraform Version: 1.1.7
-- AzureRM Version: 3.45.0
 - Cloud(s) supported:{Government/Commercial} Both
 - Cloud(s) verified: Government
 - Product Version/License:
 - FedRAMP Compliance Support: Moderate, High
 - DoD Compliance Support:{IL4/5} IL4, IL5
 - Misc Framework Support:
-- Launchpad validated version: N/A
 
 ## Setup and usage
 
@@ -26,16 +23,41 @@ Code should be stored in terraform/modules
 
 If you need to support resources in addition to this list, you will need to creation additional config files.
 
-## Issues
+These are the resources that this module supports:
 
-Bug fixes and enhancements are managed, tracked, and discussed through the GitHub issues on this repository.
-
-Issues should be flagged appropriately.
-
-- Bug
-- Enhancement
-- Documentation
-- Code
+- ACR
+- Application Gateway
+- AKS
+- Automation Accounts
+- App Service
+- App Service Environment
+- Azure Virtual Desktop Hostpool
+- Azure Virtual Desktop Workspace
+- Backup (Recovery Services Vault)
+- Cosmos Database
+- Data Factory
+- Databricks
+- Event Hub
+- Functions
+- Firewall
+- Key Vault
+- Kusto
+- Log Analytics Workspace
+- Load Balancer
+- Logic App
+- MySQL Managed Instance
+- MSSQL Database
+- MSSQL Server
+- NSG
+- PostgreSQL Managed Instance
+- Redis
+- Redis Enterprise Cluster
+- SQL
+- SQL Elastic Pools
+- Storage Accounts
+- Subscriptions
+- Vnet
+- Web App
 
 ### Bugs
 
