@@ -1,6 +1,11 @@
-# ACE-Azure-Diaganostics
+<div align="center">
+<img src="coalfire_logo.png" width="200">
 
-Diagnostic module for Azure. Enables required log settings for supported resources to a Log Analytics Workspace.
+</div>
+
+# terraform-azurerm-diaganostics
+
+Diagnostic module for Azure. Enables FedRAMP required log settings for supported resources to a Log Analytics Workspace.
 
 ## Description
 
@@ -15,10 +20,6 @@ Diagnostic module for Azure. Enables required log settings for supported resourc
 
 You can consume this as part of any Azure project. There are no known outside dependencies. View the module README for detailed instructions.
 
-### Code Location
-
-Code should be stored in terraform/modules
-
 ### Code updates
 
 If you need to support resources in addition to this list, you will need to creation additional config files.
@@ -28,9 +29,9 @@ These are the resources that this module supports:
 - ACR
 - Application Gateway
 - AKS
-- Automation Accounts
 - App Service
 - App Service Environment
+- Automation Accounts
 - Azure Virtual Desktop Hostpool
 - Azure Virtual Desktop Workspace
 - Backup (Recovery Services Vault)
@@ -39,54 +40,26 @@ These are the resources that this module supports:
 - Databricks
 - Event Hub
 - Functions
-- Firewall
+- Azure Firewall
 - Key Vault
 - Kusto
 - Log Analytics Workspace
 - Load Balancer
 - Logic App
-- MySQL Managed Instance
 - MSSQL Database
+- MSSQL Elastic Pools
 - MSSQL Server
+- MySQL Managed Instance
 - NSG
 - PostgreSQL Managed Instance
 - Redis
 - Redis Enterprise Cluster
 - SQL
-- SQL Elastic Pools
 - Storage Accounts
 - Subscriptions
 - Vnet
 - Web App
 
-### Bugs
-
-Bugs are problems that exist with the technology or code that occur when expected behavior does not match implementation.
-For example, spelling mistakes on a dashboard.
-
-Use the Bug fix template to describe the issue and expected behaviors.
-
-### Enhancements
-
-Updates and changes to the code to support additional functionality, new features or improve engineering or operations usage of the technology.
-For example, adding a new widget to a dashboard to report on failed backups is enhancement.
-
-Use the Enhancement issue template to request enhancements to the codebase. Enhancements should be improvements that are applicable to wide variety of clients and projects. One of updates for a specific project should be handled locally. If you are unsure if something qualifies for an enhancement contact the repository code owner.
-
-### Pull Requests
-
-Code updates ideally are limited in scope to address one enhancement or bug fix per PR. The associated PR should be linked to the relevant issue.
-
-### Code Owners
-
-- Primary Code owner: Douglas Francis (@douglas-f)
-- Backup Code owner:
-
-The responsibility of the code owners is to approve and Merge PR's on the repository, and generally manage and direct issue discussions.
-
-### GitHub Actions
-
-Future state. There are current initiatives for running CI/CD tooling as GitHub actions.
 
 ### Usage
 
@@ -170,4 +143,3 @@ No modules.
 ## Outputs
 
 No outputs.
-<!-- END_TF_DOCS -->
