@@ -64,6 +64,10 @@ These are the resources that this module supports:
 ### Usage
 
 ```hcl
+provider "azurerm" {
+  features {}
+}
+
 module "kv_diag" {
   source                = "github.com/Coalfire-CF/Ace-Azure-Diagnostics"
   diag_log_analytics_id = var.diag_log_analytics_id
