@@ -7,6 +7,8 @@
 
 Diagnostic module for Azure. Enables FedRAMP required log settings for supported resources to a Log Analytics Workspace.
 
+Learn more at [Coalfire OpenSource](https://coalfire.com/opensource).
+
 ## Description
 
 - Cloud(s) supported:{Government/Commercial} Both
@@ -69,7 +71,7 @@ provider "azurerm" {
 }
 
 module "kv_diag" {
-  source                = "github.com/Coalfire-CF/Ace-Azure-Diagnostics"
+  source                = "github.com/Coalfire-CF/terraform-azurerm-diagnostics"
   diag_log_analytics_id = var.diag_log_analytics_id
   resource_id           = azurerm_key_vault.default.id
   resource_type         = "kv"
