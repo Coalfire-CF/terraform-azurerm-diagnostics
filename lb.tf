@@ -9,7 +9,7 @@ resource "azurerm_monitor_diagnostic_setting" "lb_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

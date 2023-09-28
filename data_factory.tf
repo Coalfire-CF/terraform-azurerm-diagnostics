@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "ActivityRuns"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -17,7 +17,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "PipelineRuns"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -26,7 +26,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "SandboxActivityRuns"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -35,7 +35,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "SandboxPipelineRuns"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -44,7 +44,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "SSISIntegrationRuntimeLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -53,7 +53,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "SSISPackageEventMessageContext"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -62,7 +62,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "SSISPackageEventMessages"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -71,7 +71,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "SSISPackageExecutableStatistics"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -80,7 +80,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "SSISPackageExecutionComponentPhases"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -89,7 +89,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "SSISPackageExecutionDataStatistics"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -98,7 +98,7 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
     category = "TriggerRuns"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

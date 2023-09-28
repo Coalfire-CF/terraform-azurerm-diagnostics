@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "RemoteHistoryService"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -17,7 +17,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "accounts"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -26,7 +26,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "clusters"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -35,7 +35,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "databrickssql"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -44,7 +44,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "dbfs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -53,7 +53,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "deltaPipelines"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -62,7 +62,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "featureStore"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -71,7 +71,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "genie"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -80,7 +80,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "globalInitScripts"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -89,7 +89,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "iamRole"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -98,7 +98,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "instancePools"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -107,7 +107,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "jobs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -116,7 +116,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "mlflowAcledArtifact"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -125,7 +125,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "mlflowExperiment"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -134,7 +134,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "modelRegistry"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -143,7 +143,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "notebook"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -152,7 +152,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "repos"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -161,7 +161,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "secrets"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -170,7 +170,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "sqlPermissions"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -179,7 +179,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "sqlanalytics"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -188,7 +188,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "ssh"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -197,7 +197,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "unityCatalog"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -206,7 +206,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "workspace"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -215,7 +215,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "gitCredentials"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -224,7 +224,7 @@ resource "azurerm_monitor_diagnostic_setting" "dbk_diag" {
     category = "webTerminal"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

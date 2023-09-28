@@ -9,7 +9,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -18,7 +18,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -27,7 +27,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -36,7 +36,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -45,7 +45,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -54,7 +54,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -63,7 +63,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -72,7 +72,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -81,7 +81,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -91,7 +91,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
     enabled  = true
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

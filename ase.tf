@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "ase_diag" {
     category = "AppServiceEnvironmentPlatformLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -18,7 +18,7 @@ resource "azurerm_monitor_diagnostic_setting" "ase_diag" {
     enabled  = true
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

@@ -9,7 +9,7 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -17,7 +17,7 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
     category = "DscNodeStatus"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -26,7 +26,7 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -35,7 +35,7 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -45,7 +45,7 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
     enabled  = false
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }

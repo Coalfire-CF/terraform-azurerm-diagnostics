@@ -9,7 +9,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -18,7 +18,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -27,7 +27,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -36,7 +36,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_workspace_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

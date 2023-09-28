@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "acr_diag" {
     category = "ContainerRegistryLoginEvents"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -17,7 +17,7 @@ resource "azurerm_monitor_diagnostic_setting" "acr_diag" {
     category = "ContainerRegistryRepositoryEvents"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -27,7 +27,7 @@ resource "azurerm_monitor_diagnostic_setting" "acr_diag" {
     enabled  = true
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
