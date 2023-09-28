@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
     category = "ApplicationGatewayAccessLog"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -16,7 +16,7 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
     category = "ApplicationGatewayFirewallLog"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -24,7 +24,7 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
     category = "ApplicationGatewayPerformanceLog"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -34,7 +34,7 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
     enabled  = false
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }

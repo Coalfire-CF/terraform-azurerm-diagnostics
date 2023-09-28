@@ -9,7 +9,7 @@ resource "azurerm_monitor_diagnostic_setting" "vnet_diag" {
     enabled  = true
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

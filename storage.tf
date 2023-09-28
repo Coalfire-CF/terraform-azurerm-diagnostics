@@ -11,7 +11,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -20,7 +20,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -29,7 +29,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -39,7 +39,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -48,7 +48,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
     enabled  = false
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -66,7 +66,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
     enabled  = true
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -76,7 +76,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -94,7 +94,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -103,7 +103,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -112,7 +112,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -122,7 +122,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -131,7 +131,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
     enabled  = false
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -150,7 +150,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -159,7 +159,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -168,7 +168,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -178,7 +178,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -187,7 +187,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
     enabled  = false
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -206,7 +206,7 @@ resource "azurerm_monitor_diagnostic_setting" "file_table_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -215,7 +215,7 @@ resource "azurerm_monitor_diagnostic_setting" "file_table_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -224,7 +224,7 @@ resource "azurerm_monitor_diagnostic_setting" "file_table_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -234,7 +234,7 @@ resource "azurerm_monitor_diagnostic_setting" "file_table_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -243,7 +243,7 @@ resource "azurerm_monitor_diagnostic_setting" "file_table_diag" {
     enabled  = false
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

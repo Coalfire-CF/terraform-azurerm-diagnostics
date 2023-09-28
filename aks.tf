@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     category = "cloud-controller-manager"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -16,7 +16,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     category = "cluster-autoscaler"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -24,7 +24,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     category = "csi-azuredisk-controller"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -32,7 +32,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     category = "csi-azurefile-controller"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -40,7 +40,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     category = "csi-snapshot-controller"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -48,7 +48,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     category = "guard"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -56,7 +56,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     category = "kube-apiserver"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -65,14 +65,14 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
 
     retention_policy {
       enabled = true
-      days    = 365
+      days    = 0
     }
   }
   enabled_log {
     category = "kube-audit-admin"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -80,7 +80,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     category = "kube-controller-manager"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -88,7 +88,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     category = "kube-scheduler"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -98,7 +98,7 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     enabled  = false
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
