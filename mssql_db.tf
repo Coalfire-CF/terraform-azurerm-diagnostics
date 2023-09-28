@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "DevOpsOperationsAudit"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -17,7 +17,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "SQLSecurityAuditEvents"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -26,7 +26,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "SQLInsights"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -35,7 +35,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "AutomaticTuning"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -44,7 +44,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "QueryStoreRuntimeStatistics"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -53,7 +53,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "QueryStoreWaitStatistics"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -62,7 +62,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "Errors"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -71,7 +71,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "DatabaseWaitStatistics"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -80,7 +80,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "Timeouts"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -89,7 +89,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "Blocks"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -98,7 +98,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "Deadlocks"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -107,7 +107,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "Basic"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -117,7 +117,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     enabled  = false
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -127,7 +127,7 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     enabled  = false
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }

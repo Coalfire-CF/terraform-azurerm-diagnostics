@@ -9,7 +9,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -18,7 +18,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -28,7 +28,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
 
     retention_policy {
       enabled = true
-      days    = 365
+      days    = 0
 
     }
   }
@@ -37,7 +37,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -46,7 +46,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -55,7 +55,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -64,7 +64,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -73,7 +73,7 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

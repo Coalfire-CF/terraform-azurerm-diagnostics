@@ -15,7 +15,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -24,7 +24,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -33,7 +33,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -42,7 +42,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -51,7 +51,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -60,7 +60,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -69,7 +69,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -78,7 +78,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -87,7 +87,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -96,7 +96,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -105,7 +105,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -114,7 +114,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -123,7 +123,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -132,7 +132,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -149,7 +149,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -158,7 +158,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -167,7 +167,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -176,7 +176,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -185,7 +185,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }
@@ -194,7 +194,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -202,7 +202,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
     category = "AzureSiteRecoveryEvents"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -211,7 +211,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -220,7 +220,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -229,7 +229,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -238,7 +238,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -247,7 +247,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -256,7 +256,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
 
     }
@@ -266,7 +266,7 @@ resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
 
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = false
     }
   }

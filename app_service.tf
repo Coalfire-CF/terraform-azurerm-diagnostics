@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "asp_diag" {
     category = "AppServiceAntivirusScanAuditLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -17,7 +17,7 @@ resource "azurerm_monitor_diagnostic_setting" "asp_diag" {
     category = "AppServiceAppLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -26,7 +26,7 @@ resource "azurerm_monitor_diagnostic_setting" "asp_diag" {
     category = "AppServiceAuditLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -35,7 +35,7 @@ resource "azurerm_monitor_diagnostic_setting" "asp_diag" {
     category = "AppServiceConsoleLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -44,7 +44,7 @@ resource "azurerm_monitor_diagnostic_setting" "asp_diag" {
     category = "AppServiceFileAuditLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -53,7 +53,7 @@ resource "azurerm_monitor_diagnostic_setting" "asp_diag" {
     category = "AppServiceHTTPLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -62,7 +62,7 @@ resource "azurerm_monitor_diagnostic_setting" "asp_diag" {
     category = "AppServiceIPSecAuditLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -71,7 +71,7 @@ resource "azurerm_monitor_diagnostic_setting" "asp_diag" {
     category = "AppServicePlatformLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -81,7 +81,7 @@ resource "azurerm_monitor_diagnostic_setting" "asp_diag" {
     enabled  = true
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

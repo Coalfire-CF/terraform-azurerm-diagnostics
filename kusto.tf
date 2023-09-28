@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "kusto_diag" {
     category = "Command"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -17,7 +17,7 @@ resource "azurerm_monitor_diagnostic_setting" "kusto_diag" {
     category = "FailedIngestion"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -26,7 +26,7 @@ resource "azurerm_monitor_diagnostic_setting" "kusto_diag" {
     category = "IngestionBatching"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -35,7 +35,7 @@ resource "azurerm_monitor_diagnostic_setting" "kusto_diag" {
     category = "Journal"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -44,7 +44,7 @@ resource "azurerm_monitor_diagnostic_setting" "kusto_diag" {
     category = "Query"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -53,7 +53,7 @@ resource "azurerm_monitor_diagnostic_setting" "kusto_diag" {
     category = "SucceededIngestion"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -62,7 +62,7 @@ resource "azurerm_monitor_diagnostic_setting" "kusto_diag" {
     category = "TableDetails"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -71,7 +71,7 @@ resource "azurerm_monitor_diagnostic_setting" "kusto_diag" {
     category = "TableUsageStatistics"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -81,7 +81,7 @@ resource "azurerm_monitor_diagnostic_setting" "kusto_diag" {
     enabled  = true
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }

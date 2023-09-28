@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "logicapp_diag" {
     category = "FunctionAppLogs"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -17,7 +17,7 @@ resource "azurerm_monitor_diagnostic_setting" "logicapp_diag" {
     category = "WorkflowRuntime"
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
@@ -27,7 +27,7 @@ resource "azurerm_monitor_diagnostic_setting" "logicapp_diag" {
     enabled  = true
 
     retention_policy {
-      days    = 365
+      days    = 0
       enabled = true
     }
   }
