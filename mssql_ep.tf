@@ -7,20 +7,10 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_ep_diag" {
   metric {
     category = "Basic"
     enabled  = true
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "InstanceAndAppAdvanced"
     enabled  = true
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }

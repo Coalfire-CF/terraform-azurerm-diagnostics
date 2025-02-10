@@ -6,29 +6,14 @@ resource "azurerm_monitor_diagnostic_setting" "acr_diag" {
 
   enabled_log {
     category = "ContainerRegistryLoginEvents"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   # Not needed for compliance
   enabled_log {
     category = "ContainerRegistryRepositoryEvents"
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
 
   metric {
     category = "AllMetrics"
     enabled  = true
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
 }

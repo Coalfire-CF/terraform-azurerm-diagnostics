@@ -6,100 +6,45 @@ resource "azurerm_monitor_diagnostic_setting" "df_diag" {
 
   enabled_log {
     category = "ActivityRuns"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "PipelineRuns"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "SandboxActivityRuns"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "SandboxPipelineRuns"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "SSISIntegrationRuntimeLogs"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "SSISPackageEventMessageContext"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "SSISPackageEventMessages"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "SSISPackageExecutableStatistics"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "SSISPackageExecutionComponentPhases"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "SSISPackageExecutionDataStatistics"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "TriggerRuns"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }

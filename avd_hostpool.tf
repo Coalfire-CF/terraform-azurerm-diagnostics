@@ -6,21 +6,9 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
 
   enabled_log {
     category = "Checkpoint"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "Error"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "Management"
@@ -34,47 +22,17 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
   }
   enabled_log {
     category = "Connection"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "HostRegistration"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "AgentHealthStatus"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "SessionHostManagement"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "NetworkData"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }

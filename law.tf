@@ -6,20 +6,10 @@ resource "azurerm_monitor_diagnostic_setting" "law_diag" {
 
   enabled_log {
     category = "Audit"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "AllMetrics"
     enabled  = true
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
 }

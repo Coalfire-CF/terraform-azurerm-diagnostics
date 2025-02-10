@@ -6,21 +6,9 @@ resource "azurerm_monitor_diagnostic_setting" "rdc_diag" {
 
   enabled_log {
     category = "ConnectedClientList"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "AllMetrics"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }
