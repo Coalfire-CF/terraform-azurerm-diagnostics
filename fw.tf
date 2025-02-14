@@ -6,41 +6,17 @@ resource "azurerm_monitor_diagnostic_setting" "fw_diag" {
 
   enabled_log {
     category = "AzureFirewallApplicationRule"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "AzureFirewallNetworkRule"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   enabled_log {
     category = "AzureFirewallDnsProxy"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "AllMetrics"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }

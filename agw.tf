@@ -6,36 +6,16 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
 
   enabled_log {
     category = "ApplicationGatewayAccessLog"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "ApplicationGatewayFirewallLog"
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "ApplicationGatewayPerformanceLog"
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
 
   metric {
     category = "AllMetrics"
     enabled  = false
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
 }

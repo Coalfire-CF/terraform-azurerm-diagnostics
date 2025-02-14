@@ -6,20 +6,8 @@ resource "azurerm_monitor_diagnostic_setting" "nsg_diag" {
 
   enabled_log {
     category = "NetworkSecurityGroupEvent"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "NetworkSecurityGroupRuleCounter"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }

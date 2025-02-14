@@ -7,93 +7,33 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
 
   enabled_log {
     category = "CassandraRequests"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "ControlPlaneRequests"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "DataPlaneRequests"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "GremlinRequests"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "MongoRequests"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "PartitionKeyRUConsumption"
-
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
   enabled_log {
     category = "PartitionKeyStatistics"
-
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
   enabled_log {
     category = "QueryRuntimeStatistics"
-
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
   enabled_log {
     category = "TableApiRequests"
-
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
 
   metric {
     category = "Requests"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }

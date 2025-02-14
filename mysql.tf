@@ -6,30 +6,12 @@ resource "azurerm_monitor_diagnostic_setting" "msql_diag" {
 
   enabled_log {
     category = "MySqlAuditLogs"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "MySqlSlowLogs"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "AllMetrics"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }

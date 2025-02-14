@@ -8,49 +8,20 @@ resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
 
   enabled_log {
     category = "StorageDelete"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "StorageRead"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "StorageWrite"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "Capacity"
-
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
   metric {
     category = "Transaction"
     enabled  = false
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }
 
@@ -64,21 +35,10 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
   metric {
     category = "Transaction"
     enabled  = true
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "Capacity"
-
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
 }
 
@@ -91,49 +51,20 @@ resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
 
   enabled_log {
     category = "StorageDelete"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "StorageRead"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "StorageWrite"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "Capacity"
-
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
   metric {
     category = "Transaction"
     enabled  = false
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }
 
@@ -147,49 +78,20 @@ resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
 
   enabled_log {
     category = "StorageDelete"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "StorageRead"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "StorageWrite"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "Capacity"
-
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
   metric {
     category = "Transaction"
     enabled  = false
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }
 
@@ -203,48 +105,19 @@ resource "azurerm_monitor_diagnostic_setting" "file_table_diag" {
 
   enabled_log {
     category = "StorageDelete"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "StorageRead"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
   enabled_log {
     category = "StorageWrite"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "Capacity"
-
-
-    retention_policy {
-      days    = 0
-      enabled = false
-    }
   }
   metric {
     category = "Transaction"
     enabled  = false
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }

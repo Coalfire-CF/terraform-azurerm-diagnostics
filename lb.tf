@@ -6,11 +6,5 @@ resource "azurerm_monitor_diagnostic_setting" "lb_diag" {
 
   metric {
     category = "AllMetrics"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }

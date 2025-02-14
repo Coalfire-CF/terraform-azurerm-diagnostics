@@ -6,21 +6,10 @@ resource "azurerm_monitor_diagnostic_setting" "func_diag" {
 
   enabled_log {
     category = "FunctionAppLogs"
-
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 
   metric {
     category = "AllMetrics"
     enabled  = true
-
-    retention_policy {
-      days    = 0
-      enabled = true
-    }
   }
 }
