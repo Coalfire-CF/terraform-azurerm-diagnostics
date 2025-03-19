@@ -8,10 +8,10 @@ resource "azurerm_monitor_diagnostic_setting" "psql_diag" {
     category = "PostgreSQLLogs"
   }
   enabled_log {
-    category = "QueryStoreRuntimeStatistics"
+    category = "PostgreSQLFlexQueryStoreWaitStats"
   }
   enabled_log {
-    category = "QueryStoreWaitStatistics"
+    category = "PostgreSQLFlexQueryStoreRuntime"
   }
 
   metric {
