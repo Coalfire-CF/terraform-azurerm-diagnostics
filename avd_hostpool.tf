@@ -12,13 +12,6 @@ resource "azurerm_monitor_diagnostic_setting" "avd_hostpool_diag" {
   }
   enabled_log {
     category = "Management"
-
-
-    retention_policy {
-      enabled = true
-      days    = 0
-
-    }
   }
   enabled_log {
     category = "Connection"
