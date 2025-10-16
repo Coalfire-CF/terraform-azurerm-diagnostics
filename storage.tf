@@ -3,25 +3,57 @@
 resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
   count                      = var.resource_type == "sa" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
-  name                       = "storage_securityLogs"
+  name                       = "storage_blob_securityLogs"
   target_resource_id         = "${var.resource_id}/blobServices/default"
 
-  enabled_log {
+  log {
     category = "StorageDelete"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "StorageRead"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "StorageWrite"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 
   metric {
     category = "Capacity"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
+
   metric {
     category = "Transaction"
     enabled  = false
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 }
 
@@ -29,16 +61,27 @@ resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
 resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
   count                      = var.resource_type == "sa" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
-  name                       = "storage_securityLogs"
+  name                       = "storage_account_securityLogs"
   target_resource_id         = var.resource_id
 
   metric {
     category = "Transaction"
     enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 
   metric {
     category = "Capacity"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 }
 
@@ -46,25 +89,57 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
 resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
   count                      = var.resource_type == "sa" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
-  name                       = "storage_securityLogs"
-  target_resource_id         = "${var.resource_id}/queueServices/default/"
+  name                       = "storage_queue_securityLogs"
+  target_resource_id         = "${var.resource_id}/queueServices/default"
 
-  enabled_log {
+  log {
     category = "StorageDelete"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "StorageRead"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "StorageWrite"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 
   metric {
     category = "Capacity"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
+
   metric {
     category = "Transaction"
     enabled  = false
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 }
 
@@ -73,51 +148,114 @@ resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
 resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
   count                      = var.resource_type == "sa" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
-  name                       = "storage_securityLogs"
+  name                       = "storage_table_securityLogs"
   target_resource_id         = "${var.resource_id}/tableServices/default"
 
-  enabled_log {
+  log {
     category = "StorageDelete"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "StorageRead"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "StorageWrite"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 
   metric {
     category = "Capacity"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
+
   metric {
     category = "Transaction"
     enabled  = false
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 }
 
 # File Logging
-
-resource "azurerm_monitor_diagnostic_setting" "file_table_diag" {
+resource "azurerm_monitor_diagnostic_setting" "sa_file_diag" {
   count                      = var.resource_type == "sa" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
-  name                       = "storage_securityLogs"
+  name                       = "storage_file_securityLogs"
   target_resource_id         = "${var.resource_id}/fileServices/default"
 
-  enabled_log {
+  log {
     category = "StorageDelete"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "StorageRead"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "StorageWrite"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 
   metric {
     category = "Capacity"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
+
   metric {
     category = "Transaction"
     enabled  = false
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 }
