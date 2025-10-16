@@ -1,50 +1,146 @@
 resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
   count                      = var.resource_type == "sql" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
-  name                       = "sql_securityLogs"
+  name                       = "sql_diagnosticLogs"
   target_resource_id         = var.resource_id
 
-  enabled_log {
+  log {
     category = "AutomaticTuning"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "Blocks"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "DatabaseWaitStatistics"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "Deadlocks"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "DevOpsOperationsAudit"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "Errors"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "QueryStoreRuntimeStatistics"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "QueryStoreWaitStatistics"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "SQLInsights"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "SQLSecurityAuditEvents"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "Timeouts"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 
   metric {
     category = "Basic"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
+
   metric {
     category = "InstanceAndAppAdvanced"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
+
   metric {
     category = "WorkloadManagement"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 }
