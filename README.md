@@ -166,3 +166,51 @@ No outputs.
 ### Copyright
 
 Copyright © 2023 Coalfire Systems Inc.
+## Tree
+```
+.
+|-- CHANGELOG.md
+|-- CONTRIBUTING.md
+|-- LICENSE
+|-- License.md
+|-- README.md
+|-- acr.tf
+|-- agw.tf
+|-- aks.tf
+|-- app_service.tf
+|-- ase.tf
+|-- automation_account.tf
+|-- avd_hostpool.tf
+|-- avd_workspace.tf
+|-- backup_vault.tf
+|-- coalfire_logo.png
+|-- cosmos.tf
+|-- data_factory.tf
+|-- databricks.tf
+|-- eventhub.tf
+|-- functions.tf
+|-- fw.tf
+|-- keyvault.tf
+|-- kusto.tf
+|-- law.tf
+|-- lb.tf
+|-- logicapp.tf
+|-- mssql.tf
+|-- mssql_db.tf
+|-- mssql_ep.tf
+|-- mysql.tf
+|-- nsg.tf
+|-- output.tf
+|-- psql.tf
+|-- redis.tf
+|-- redis_enterprise.tf
+|-- release-please-config.json
+|-- required_providers.tf
+|-- sql.tf
+|-- storage.tf
+|-- subscription.tf
+|-- update-readme-tree.sh
+|-- variables.tf
+|-- vnet.tf
+|-- webapp.tf
+```
