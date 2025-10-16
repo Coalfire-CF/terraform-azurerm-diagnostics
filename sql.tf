@@ -144,3 +144,4 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
     }
   }
 }
+
