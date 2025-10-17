@@ -6,101 +6,315 @@
 resource "azurerm_monitor_diagnostic_setting" "rsv_backup_diag" {
   count                          = var.resource_type == "rsv" ? 1 : 0
   log_analytics_workspace_id     = var.diag_log_analytics_id
-  name                           = "backup_securityLogs"
+  name                           = "backup_diagnosticLogs"
   target_resource_id             = var.resource_id
   log_analytics_destination_type = "Dedicated"
 
-  enabled_log {
+  log {
     category = "AddonAzureBackupAlerts"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AddonAzureBackupJobs"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AddonAzureBackupPolicy"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AddonAzureBackupProtectedInstance"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AddonAzureBackupStorage"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureBackupReport"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryEvents"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryJobs"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryProtectedDiskDataChurn"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryRecoveryPoints"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryReplicatedItems"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryReplicationDataUploadRate"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryReplicationStats"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "CoreAzureBackup"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
+  }
+
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 }
 
 resource "azurerm_monitor_diagnostic_setting" "rsv_site_recovery_diag" {
   count                      = var.resource_type == "rsv" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
-  name                       = "site_recovery_securityLogs"
+  name                       = "site_recovery_diagnosticLogs"
   target_resource_id         = var.resource_id
 
-  enabled_log {
+  log {
     category = "AddonAzureBackupAlerts"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AddonAzureBackupJobs"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AddonAzureBackupPolicy"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AddonAzureBackupProtectedInstance"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AddonAzureBackupStorage"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureBackupReport"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryEvents"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryJobs"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryProtectedDiskDataChurn"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryRecoveryPoints"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryReplicatedItems"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryReplicationDataUploadRate"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "AzureSiteRecoveryReplicationStats"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
-  enabled_log {
+
+  log {
     category = "CoreAzureBackup"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
+  }
+
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
   }
 
   depends_on = [

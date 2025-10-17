@@ -1,26 +1,36 @@
 resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
   count                      = var.resource_type == "aa" ? 1 : 0
   log_analytics_workspace_id = var.diag_log_analytics_id
-  name                       = "automationaccount_securityLogs"
+  name                       = "automationaccount_diagnosticLogs"
   target_resource_id         = var.resource_id
 
-  enabled_log {
+  log {
     category = "AuditEvent"
+    enabled  = true
+    retention_policy { enabled = false days = 0 }
   }
-  enabled_log {
+
+  log {
     category = "DscNodeStatus"
+    enabled  = true
+    retention_policy { enabled = false days = 0 }
   }
-  enabled_log {
+
+  log {
     category = "JobLogs"
-
+    enabled  = true
+    retention_policy { enabled = false days = 0 }
   }
-  enabled_log {
-    category = "JobStreams"
 
+  log {
+    category = "JobStreams"
+    enabled  = true
+    retention_policy { enabled = false days = 0 }
   }
 
   metric {
     category = "AllMetrics"
-    enabled  = false
+    enabled  = true
+    retention_policy { enabled = false days = 0 }
   }
 }
