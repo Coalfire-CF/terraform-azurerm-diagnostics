@@ -36,8 +36,7 @@ resource "azurerm_monitor_diagnostic_setting" "kusto_diag" {
     category = "TableUsageStatistics"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
-    enabled  = true
   }
 }

@@ -12,8 +12,7 @@ resource "azurerm_monitor_diagnostic_setting" "logicapp_diag" {
     category = "WorkflowRuntime"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
-    enabled  = true
   }
 }

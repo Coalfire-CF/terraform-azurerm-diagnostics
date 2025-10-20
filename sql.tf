@@ -38,13 +38,15 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
     category = "Timeouts"
   }
 
-  metric {
+  enabled_metric {
     category = "Basic"
   }
-  metric {
+
+  enabled_metric {
     category = "InstanceAndAppAdvanced"
   }
-  metric {
+  
+  enabled_metric {
     category = "WorkloadManagement"
   }
 }

@@ -32,8 +32,7 @@ resource "azurerm_monitor_diagnostic_setting" "eh_diag" {
     category = "OperationalLogs"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
-    enabled  = true
   }
 }

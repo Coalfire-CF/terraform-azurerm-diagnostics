@@ -8,8 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "law_diag" {
     category = "Audit"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
-    enabled  = true
   }
 }

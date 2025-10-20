@@ -33,7 +33,7 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
     category = "TableApiRequests"
   }
 
-  metric {
-    category = "Requests"
+  enabled_metric {
+    category = "AllMetrics"
   }
 }

@@ -113,11 +113,11 @@ resource "azurerm_monitor_diagnostic_setting" "file_table_diag" {
     category = "StorageWrite"
   }
 
-  metric {
+  enabled_metric {
     category = "Capacity"
   }
-  metric {
+
+  enabled_metric {
     category = "Transaction"
-    enabled  = false
   }
 }

@@ -12,8 +12,7 @@ resource "azurerm_monitor_diagnostic_setting" "acr_diag" {
     category = "ContainerRegistryRepositoryEvents"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
-    enabled  = true
   }
 }

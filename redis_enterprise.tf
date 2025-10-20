@@ -4,8 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "rdec_diag" {
   name                       = "redisenterprise_securityLogs"
   target_resource_id         = var.resource_id
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
-    enabled  = true
   }
 }

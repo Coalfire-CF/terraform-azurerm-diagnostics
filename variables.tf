@@ -53,3 +53,18 @@ variable "diag_log_analytics_id" {
   description = "ID of the Log Analytics Workspace diagnostic logs should be sent to"
   type        = string
 }
+
+variable "subscription_id" {
+  description = "The Azure subscription ID for deployment"
+  type        = string
+}
+
+variable "tenant_id" {
+  description = "The Azure AD tenant ID"
+  type        = string
+}
+
+variable "environment" {
+  description = "The Azure environment (e.g., 'usgovernment')"
+  type        = string
+}
