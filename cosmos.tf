@@ -34,6 +34,6 @@ resource "azurerm_monitor_diagnostic_setting" "cdb_diag" {
   }
 
   enabled_metric {
-    category = "AllMetrics"
+    category = "Requests"
   }
 }
