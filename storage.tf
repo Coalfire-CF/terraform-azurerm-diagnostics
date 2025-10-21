@@ -19,9 +19,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
   enabled_metric {
     category = "Capacity"
   }
-  enabled_metric {
-    category = "Transaction"
-  }
+
 }
 
 # SA storage logging
@@ -60,9 +58,7 @@ resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
   enabled_metric {
     category = "Capacity"
   }
-  enabled_metric {
-    category = "Transaction"
-  }
+
 }
 
 # Table Logging
@@ -87,9 +83,6 @@ resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
     category = "Capacity"
   }
 
-  enabled_metric {
-    category = "Transaction"
-  }
 }
 
 # File Logging
