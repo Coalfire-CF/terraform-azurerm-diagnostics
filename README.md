@@ -201,7 +201,6 @@ Copyright © 2023 Coalfire Systems Inc.
 |-- mysql.tf
 |-- nsg.tf
 |-- output.tf
-|-- provider.tf
 |-- psql.tf
 |-- redis.tf
 |-- redis_enterprise.tf
@@ -210,7 +209,6 @@ Copyright © 2023 Coalfire Systems Inc.
 |-- sql.tf
 |-- storage.tf
 |-- subscription.tf
-|-- terraform.tfvars
 |-- update-readme-tree.sh
 |-- variables.tf
 |-- vnet.tf
