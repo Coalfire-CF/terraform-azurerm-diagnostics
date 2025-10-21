@@ -4,8 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "vnet_diag" {
   name                       = "vnet_securityLogs"
   target_resource_id         = var.resource_id
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
-    enabled  = true
   }
 }

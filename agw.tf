@@ -13,9 +13,4 @@ resource "azurerm_monitor_diagnostic_setting" "agw_diag" {
   enabled_log {
     category = "ApplicationGatewayPerformanceLog"
   }
-
-  metric {
-    category = "AllMetrics"
-    enabled  = false
-  }
 }

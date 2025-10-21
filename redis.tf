@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "rdc_diag" {
     category = "ConnectedClientList"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
   }
 }

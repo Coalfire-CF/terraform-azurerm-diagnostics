@@ -48,18 +48,8 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
     category = "Deadlocks"
   }
 
-  metric {
+  enabled_metric {
     category = "Basic"
-  }
-
-  metric {
-    category = "InstanceAndAppAdvanced"
-    enabled  = false
-  }
-
-  metric {
-    category = "WorkloadManagement"
-    enabled  = false
   }
 }
 

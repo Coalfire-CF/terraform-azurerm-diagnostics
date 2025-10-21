@@ -36,8 +36,7 @@ resource "azurerm_monitor_diagnostic_setting" "asp_diag" {
     category = "AppServicePlatformLogs"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
-    enabled  = true
   }
 }

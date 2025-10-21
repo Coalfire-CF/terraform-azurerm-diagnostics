@@ -8,8 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "ase_diag" {
     category = "AppServiceEnvironmentPlatformLogs"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
-    enabled  = true
   }
 }

@@ -19,8 +19,4 @@ resource "azurerm_monitor_diagnostic_setting" "aa_diag" {
 
   }
 
-  metric {
-    category = "AllMetrics"
-    enabled  = false
-  }
 }

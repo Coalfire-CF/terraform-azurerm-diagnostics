@@ -5,9 +5,8 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_diag" {
   target_resource_id         = var.resource_id
 
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
-    enabled  = true
   }
 }
 

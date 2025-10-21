@@ -4,13 +4,11 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_ep_diag" {
   name                       = "mssql_elasticPool_securitylogs"
   target_resource_id         = var.resource_id
 
-  metric {
+  enabled_metric {
     category = "Basic"
-    enabled  = true
   }
 
-  metric {
+  enabled_metric {
     category = "InstanceAndAppAdvanced"
-    enabled  = true
   }
 }

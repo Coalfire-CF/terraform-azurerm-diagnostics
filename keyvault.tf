@@ -12,7 +12,7 @@ resource "azurerm_monitor_diagnostic_setting" "kv_diag" {
     category = "AzurePolicyEvaluationDetails"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
   }
 }

@@ -4,7 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "lb_diag" {
   name                       = "lb_securityLogs"
   target_resource_id         = var.resource_id
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
   }
 }

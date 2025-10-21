@@ -11,7 +11,7 @@ resource "azurerm_monitor_diagnostic_setting" "msql_diag" {
     category = "MySqlSlowLogs"
   }
 
-  metric {
+  enabled_metric {
     category = "AllMetrics"
   }
 }
