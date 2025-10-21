@@ -38,7 +38,4 @@ resource "azurerm_monitor_diagnostic_setting" "aks_diag" {
     category = "kube-scheduler"
   }
 
-  enabled_metric {
-    category = "AllMetrics"
-  }
 }

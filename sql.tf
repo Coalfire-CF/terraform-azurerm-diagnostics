@@ -45,7 +45,7 @@ resource "azurerm_monitor_diagnostic_setting" "sql_diag" {
   enabled_metric {
     category = "InstanceAndAppAdvanced"
   }
-  
+
   enabled_metric {
     category = "WorkloadManagement"
   }

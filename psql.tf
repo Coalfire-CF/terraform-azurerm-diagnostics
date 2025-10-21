@@ -7,7 +7,7 @@ resource "azurerm_monitor_diagnostic_setting" "psql_diag" {
   enabled_log {
     category = "PostgreSQLLogs"
   }
-  
+
   enabled_log {
     category = "PostgreSQLFlexQueryStoreWaitStats"
   }

@@ -51,14 +51,6 @@ resource "azurerm_monitor_diagnostic_setting" "mssql_db_diag" {
   enabled_metric {
     category = "Basic"
   }
-
-  enabled_metric {
-    category = "InstanceAndAppAdvanced"
-  }
-
-  enabled_metric {
-    category = "AllMetrics"
-  }
 }
 
 resource "azurerm_mssql_database_extended_auditing_policy" "mssql_db_audit_policy" {

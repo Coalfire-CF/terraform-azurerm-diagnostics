@@ -16,12 +16,11 @@ resource "azurerm_monitor_diagnostic_setting" "sa_blob_diag" {
     category = "StorageWrite"
   }
 
-  metric {
+  enabled_metric {
     category = "Capacity"
   }
-  metric {
+  enabled_metric {
     category = "Transaction"
-    enabled  = false
   }
 }
 
@@ -32,12 +31,11 @@ resource "azurerm_monitor_diagnostic_setting" "sa_diag" {
   name                       = "storage_securityLogs"
   target_resource_id         = var.resource_id
 
-  metric {
+  enabled_metric {
     category = "Transaction"
-    enabled  = true
   }
 
-  metric {
+  enabled_metric {
     category = "Capacity"
   }
 }
@@ -59,12 +57,11 @@ resource "azurerm_monitor_diagnostic_setting" "sa_queue_diag" {
     category = "StorageWrite"
   }
 
-  metric {
+  enabled_metric {
     category = "Capacity"
   }
-  metric {
+  enabled_metric {
     category = "Transaction"
-    enabled  = false
   }
 }
 
@@ -86,12 +83,12 @@ resource "azurerm_monitor_diagnostic_setting" "sa_table_diag" {
     category = "StorageWrite"
   }
 
-  metric {
+  enabled_metric {
     category = "Capacity"
   }
-  metric {
+
+  enabled_metric {
     category = "Transaction"
-    enabled  = false
   }
 }
 
@@ -117,7 +114,4 @@ resource "azurerm_monitor_diagnostic_setting" "file_table_diag" {
     category = "Capacity"
   }
 
-  enabled_metric {
-    category = "Transaction"
-  }
 }

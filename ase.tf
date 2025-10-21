@@ -10,5 +10,5 @@ resource "azurerm_monitor_diagnostic_setting" "ase_diag" {
 
   enabled_metric {
     category = "AllMetrics"
-}
+  }
 }
