@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.4](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.3...v1.1.4) (2025-11-04)
+
+
+### Bug Fixes
+
+* tf req version ([e503fe8](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/e503fe8bc1dc3824549a06ae283c0e54a1b522ef))
+* tf req version ([66b4922](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/66b49226b0d32b6fb187296f63924ba53269ad7c))
+
 ## [1.1.3](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.2...v1.1.3) (2025-11-04)
 
 
