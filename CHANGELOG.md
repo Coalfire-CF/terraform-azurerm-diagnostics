@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.2](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.1...v1.1.2) (2025-11-04)
+
+
+### Bug Fixes
+
+* enabled_metrics requires azurerm ~&gt;4.31 ([8e2ec21](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/8e2ec219413fc1b146116826de6cb67c3f901d5d))
+* enabled_metrics requires azurerm ~&gt;4.31 ([310d7ea](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/310d7ea8a6661aae45a728c5c75cb5edd0eff359))
+
+
+### Miscellaneous
+
+* update README tree ([6db5104](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/6db51042be54a02b4a5ab2df01079359f178a94b))
+
 ## [1.1.1](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.0...v1.1.1) (2025-10-21)
 
 
