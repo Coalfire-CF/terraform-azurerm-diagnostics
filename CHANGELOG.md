@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.3](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.2...v1.1.3) (2025-11-04)
+
+
+### Bug Fixes
+
+* cleanup duplicate versioning req files ([996118b](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/996118b0b66aba6adab1be098a8d5cd732272ac3))
+* cleanup duplicate versioning req files ([b248c42](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/b248c428436888f9f30e10511f427587fff88d6a))
+
+
+### Miscellaneous
+
+* update README tree ([bf98892](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/bf988920135eab7fa5e073d7b0c6a8fde5b3f81e))
+
 ## [1.1.2](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.1...v1.1.2) (2025-11-04)
 
 
