@@ -80,14 +80,14 @@ module "kv_diag" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.0 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 4.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~>4.31 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~> 4.0 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~>4.31 |
 
 ## Modules
 
@@ -205,7 +205,6 @@ Copyright © 2023 Coalfire Systems Inc.
 |-- redis.tf
 |-- redis_enterprise.tf
 |-- release-please-config.json
-|-- required_providers.tf
 |-- sql.tf
 |-- storage.tf
 |-- subscription.tf
