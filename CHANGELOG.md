@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.1.1](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.0...v1.1.1) (2025-10-21)
+
+
+### Bug Fixes
+
+* **diagnostics:** address feedback and remove disabled metrics ([0f98255](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/0f98255132cbf77aa60430c86b9c52205910d1b4))
+* **diagnostics:** address PR comments ([adf4b37](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/adf4b37f16e92ad76498feea4b1bdd40f8cfaf8d))
+* **diagnostics:** cleanup cosmos.tf ([11521fe](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/11521fe963eb53c201a44e68be7f8cbb40473cea))
+* **diagnostics:** correct provider config and diagnostic metric blocks ([8bb93b9](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/8bb93b9afdd0907745820e812e98de0962063cc2))
+* **diagnostics:** correct provider config and diagnostic metric blocks ([4dccdc4](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/4dccdc48ffee55415799560721131d4725c21e25))
+* **diagnostics:** update Readme ([d9c2ce7](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/d9c2ce7d4751d0f35e6d5ed81ee8bcf9603c6e81))
+
+
+### Miscellaneous
+
+* update README tree ([4345246](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/4345246feb317c5595a560bdc35e777327b32f6f))
+* update README tree ([d1b8476](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/d1b84767700da25c8bd2fe22a779c88f2c2b5b0f))
+
+
+### Documentation
+
+* **readme:** update variable table with terraform-docs ([feee268](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/feee268409cce4f62dfe92a717dee7e9e71e0c16))
+
 ## [1.1.0](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.0.4...v1.1.0) (2025-10-14)
 
 
