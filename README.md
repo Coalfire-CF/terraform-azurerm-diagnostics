@@ -205,7 +205,6 @@ Copyright © 2023 Coalfire Systems Inc.
 |-- redis.tf
 |-- redis_enterprise.tf
 |-- release-please-config.json
-|-- required_providers.tf
 |-- sql.tf
 |-- storage.tf
 |-- subscription.tf
