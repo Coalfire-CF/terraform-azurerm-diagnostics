@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.5](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.4...v1.1.5) (2025-11-19)
+
+
+### Miscellaneous
+
+* remove obsolete update-readme-tree.sh script ([fc1652c](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/fc1652c548af54da1bd2a265d68a498881722b97))
+* remove obsolete update-readme-tree.sh script ([990899c](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/990899c2e14875d83746a92811877590d7e07043))
+* remove old LICENSE file ([f5356fb](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/f5356fbe3b67688291097ec7fa528be18f26dc39))
+* remove old LICENSE file ([0ce6402](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/0ce640254e3093a0f4a50b5ae9a6523dcd7e90e8))
+* update README tree ([ece1e81](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/ece1e81fe0e9facbcec47a1c2b70d6fb1459d0e4))
+* update README tree ([3a961eb](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/3a961eba80f66284823f3020fc36b5864bc924e4))
+
 ## [1.1.4](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.3...v1.1.4) (2025-11-04)
 
 
