@@ -207,7 +207,6 @@ Copyright © 2023 Coalfire Systems Inc.
 |-- sql.tf
 |-- storage.tf
 |-- subscription.tf
-|-- update-readme-tree.sh
 |-- variables.tf
 |-- versions.tf
 |-- vnet.tf
