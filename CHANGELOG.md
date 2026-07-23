@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.1.6](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.5...v1.1.6) (2026-07-23)
+
+
+### Bug Fixes
+
+* **ci:** remove retired org-checkov caller (Checkov retired org-wide — ADR-0017, Actions[#130](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/130)) ([#127](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/127)) ([cd6261e](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/cd6261e68f8ddd8f191b2ed6004c291bfd959034))
+
+
+### Miscellaneous
+
+* adopt Actions v0.12.1 (bypass auto-merge + event-driven re-merge) ([f713cf3](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/f713cf3756cdbbf6d3f11553764114284ef553e4))
+* **ci:** adopt Coalfire-CF/Actions v0.11.3 ([#146](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/146)) ([2a2e9bb](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/2a2e9bba0b6692bb7eb9f8165116f797fb99e373))
+* **ci:** re-pin org workflows to Actions v0.8.1 + dependabot auto-merge ([#129](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/129)) ([9624aed](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/9624aedd43234bfeaf9869e86c4e9ec09eec2fec))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot-auto-merge.yml ([#141](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/141)) ([1cf0d6d](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/1cf0d6db38feaec6150d7a5c435b28f93b03f3aa))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml ([#136](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/136)) ([2cab874](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/2cab874c9ec9cdb5223075b0a83ad50473dac6f8))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml from 0.8.2 to 0.10.0 ([#139](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/139)) ([0f727ba](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/0f727ba02bd8e0e78e3f2e85c44bd8fba972d40e))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-markdown-lint.yml ([#134](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/134)) ([ff9410c](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/ff9410c4e2f6ad0e77b628d1dee82598cb1042b1))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-release.yml ([#135](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/135)) ([2189f6b](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/2189f6bef99c5e56ce54001e07a3c70a2b599f33))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-docs.yml ([#137](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/137)) ([01f04f8](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/01f04f84356e15ca945854ac16056be2438c856e))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml from 0.8.1 to 0.8.2 ([#138](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/138)) ([74142a0](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/74142a0992a0e450e2cf5201b020e7847325a6d4))
+* **deps:** bump the org-actions group with 6 updates ([#144](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/144)) ([de0bc81](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/de0bc810b7c3c2568bae21438bbe36db8af4dba4))
+* **deps:** bump the org-actions group with 8 updates ([#147](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/147)) ([9b4bedc](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/9b4bedc56ff83d1549e3f70ad408eb5bee6944f6))
+* **deps:** bump the org-actions group with 8 updates ([#148](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/148)) ([2f3ebee](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/2f3ebee338d41ac1616e556545846490c24e0276))
+* **deps:** bump the org-actions group with 8 updates ([#149](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/149)) ([9d94fbd](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/9d94fbd3f5683faaab59fba2e40ec04ff9a3a279))
+
 ## [1.1.5](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.4...v1.1.5) (2026-04-27)
 
 
