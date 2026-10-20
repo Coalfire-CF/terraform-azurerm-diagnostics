@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.6...v2.0.0) (2026-10-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* consumers on azurerm 4.x or Terraform below 1.16 must upgrade.
+
+### Features
+
+* require Terraform 1.16 and azurerm 5.7 ([#169](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/169)) ([68b3c30](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/68b3c304fe829d9994e8e644d5f3dc4f8d374f7e))
+
+
+### Miscellaneous
+
+* **deps:** bump the org-actions group with 7 updates ([#172](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/172)) ([34174d0](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/34174d07ee5b7837ca4791f25b51194f4704e50b))
+
 ## [1.1.6](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.5...v1.1.6) (2026-10-20)
 
 
