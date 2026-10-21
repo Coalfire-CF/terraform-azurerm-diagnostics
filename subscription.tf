@@ -4,8 +4,7 @@ resource "azurerm_monitor_diagnostic_setting" "sub_diag" {
   log_analytics_workspace_id = var.diag_log_analytics_id
   target_resource_id         = var.resource_id
 
-  # Can't have retention block for subscription diag settings. 
-  # If you add the retention block, Azure will remove it in the background creating an update with every terraform plan/apply
+  # Activity Log categories. Subscription settings take explicit categories, not category groups.
   enabled_log {
     category = "Administrative"
   }
