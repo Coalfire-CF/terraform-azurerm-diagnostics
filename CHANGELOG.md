@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v2.0.0...v3.0.0) (2026-10-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* Terraform >= 1.16.6, azurerm ~> 5.10. Per-type resources become azurerm_monitor_diagnostic_setting.this["<key>"] and many setting names change; in-place upgrade from v2 is unsupported. SQL servers get a master database setting. Recovery vaults get one setting. Callers need diagnosticSettingsCategories/read and must pass a real resource id. New resource_type rdedb.
+
+### Features
+
+* require Terraform 1.16.6 and azurerm 5.10 ([#174](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/174)) ([09ecd79](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/09ecd7923317379dc076ef7700d719e1d200fb1f))
+
 ## [2.0.0](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v1.1.6...v2.0.0) (2026-10-20)
 
 
