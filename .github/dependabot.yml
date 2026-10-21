@@ -26,6 +26,7 @@ updates:
   - package-ecosystem: "terraform"
     directories:
       - "/"
+      - "/tests/unknown_id"
     schedule:
       interval: "weekly"
       time: "06:14"
