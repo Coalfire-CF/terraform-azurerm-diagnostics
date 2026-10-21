@@ -1,5 +1,5 @@
 variable "resource_type" {
-  description = "The resource type i.e Azure product name (follow CF naming convention)."
+  description = "Short code for the target resource type. Each code maps to one or more diagnostic settings; see the README for the list."
   type        = string
 
   validation {
@@ -32,6 +32,7 @@ variable "resource_type" {
       "psql",     # postgreSql flexible db
       "rdc",      # azure redis cache
       "rdec",     # redis enterprise cluster
+      "rdedb",    # redis enterprise database
       "sql",      # sql db
       "sa",       # storage account
       "sub",      # subscription
@@ -45,7 +46,7 @@ variable "resource_type" {
 }
 
 variable "resource_id" {
-  description = "Target resource ID"
+  description = "ID of the target resource. Pass the resource's id attribute, not a hand-built string. For \"sa\" pass the storage account ID; the module also targets its blob, queue, table and file services. For \"mssql\" pass the server ID; the module also targets its master database. For \"sub\" pass /subscriptions/<id>."
   type        = string
 }
 
