@@ -19,7 +19,8 @@ Learn more at [Coalfire OpenSource](https://coalfire.com/opensource).
 
 ## Setup and usage
 
-You can consume this as part of any Azure project. There are no known outside dependencies. View the module README for detailed instructions.
+You can consume this as part of any Azure project. There are no known outside dependencies. View the module README for
+detailed instructions.
 
 ### Code updates
 
@@ -62,7 +63,14 @@ These are the resources that this module supports:
 - Vnet
 - Web App
 
-Each setting sends the `allLogs` category group and every metric category the target exposes (usually `AllMetrics`). Categories are read from Azure with `azurerm_monitor_diagnostic_categories`, so the deploying identity needs `Microsoft.Insights/diagnosticSettingsCategories/read` on the target. Pass the target's `id` attribute as `resource_id`; a hand-built ID of a resource that does not exist yet fails at plan. Storage accounts get settings on the account and the blob, queue, table and file services. SQL servers also get a setting on the `master` database so server auditing reaches Log Analytics; remove any other setting on `master` that sends to the same workspace. Redis Enterprise logs are on the database: use `rdedb` with the database ID. Subscriptions send all Activity Log categories. Upgrading an existing v2 deployment in place is not supported.
+Each setting sends the `allLogs` category group and every metric category the target exposes (usually `AllMetrics`).
+Categories are read from Azure with `azurerm_monitor_diagnostic_categories`, so the deploying identity needs
+`Microsoft.Insights/diagnosticSettingsCategories/read` on the target. Pass the target's `id` attribute as `resource_id`;
+a hand-built ID of a resource that does not exist yet fails at plan. Storage accounts get settings on the account and
+the blob, queue, table and file services. SQL servers also get a setting on the `master` database so server auditing
+reaches Log Analytics; remove any other setting on `master` that sends to the same workspace. Redis Enterprise logs are
+on the database: use `rdedb` with the database ID. Subscriptions send all Activity Log categories. Upgrading an existing
+v2 deployment in place is not supported.
 
 ### Usage
 
