@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v3.0.0...v3.0.1) (2026-11-06)
+
+
+### Documentation
+
+* wrap Markdown lines at 120 characters (Coalfire-CF/Actions[#375](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/375)) ([#176](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/issues/176)) ([6c3393b](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/commit/6c3393b42a5b6f586075afc194e6c1d0529684dc))
+
 ## [3.0.0](https://github.com/Coalfire-CF/terraform-azurerm-diagnostics/compare/v2.0.0...v3.0.0) (2026-10-21)
 
 
